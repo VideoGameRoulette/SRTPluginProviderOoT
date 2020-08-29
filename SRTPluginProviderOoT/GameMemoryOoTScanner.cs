@@ -45,7 +45,7 @@ namespace SRTPluginProviderOri1
             if (ProcessRunning)
             {
                 BaseAddress = NativeWrappers.GetProcessBaseAddress(pid, PInvoke.ListModules.LIST_MODULES_32BIT).ToInt32(); // Bypass .NET's managed solution for getting this and attempt to get this info ourselves via PInvoke since some users are getting 299 PARTIAL COPY when they seemingly shouldn't.
-                PointerGameData = new MultilevelPointer(memoryAccess, (IntPtr)(BaseAddress + AddressGameData));
+                PointerGameData = new MultilevelPointer(memoryAccess, new IntPtr(AddressGameData));
             }
         }
 
