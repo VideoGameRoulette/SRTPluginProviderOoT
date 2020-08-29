@@ -1,2 +1,2 @@
-# SRTPluginProviderOoT
-Plugin Provider for The Legend of Zelda: Ocarina of Time v1.0
+# SRTPluginProviderOri1
+A provider plugin for the SRT Host to provide memory values to other plugins.
